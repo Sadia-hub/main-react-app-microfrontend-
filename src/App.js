@@ -1,24 +1,41 @@
-import logo from './logo.svg';
 import './App.css';
-
+import { BrowserRouter as Router, NavLink } from "react-router-dom";
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <Router>
+    <div className="header">
+      <NavLink exact 
+      to="/" 
+      className="link">
+        Home-Page
+      </NavLink>
+
+      <NavLink
+        exact
+        to="/micro-react1"
+        className="link"     
+      >
+        Sub-react1
+      </NavLink>
+
+      <NavLink
+        exact
+        to="/micro-react2"
+        className="link"    
+      >
+        Sub-react2
+      </NavLink>
     </div>
+    
+
+    
+    <div id="subapp-viewport1"></div>
+    <div id="subapp-viewport2"></div>
+    
+  </Router>
+
+    
+    
   );
 }
 
