@@ -27,7 +27,7 @@ function App() {
       </NavLink>
     </div>
     
-
+    <h1>I am Main React App</h1>
     
     <div id="subapp-viewport1"></div>
     <div id="subapp-viewport2"></div>
